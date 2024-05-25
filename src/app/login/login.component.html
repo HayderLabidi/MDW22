@@ -1,0 +1,81 @@
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+    </div>
+    <div class="forms">
+      <div class="form-content">
+        <div class="login-form">
+          <div class="title">Login</div>
+          <form [formGroup]="login" (ngSubmit)="logindata(login)">
+            <div class="input-boxes">
+              <div class="input-box">
+
+                <input type="text" formControlName="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <input type="password" formControlName="password" placeholder="Enter your password" required>
+              </div>
+              <div class="text"><a href="" (click)="openForgotPasswordModal($event)">Forgot password?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Login">
+
+              </div>
+
+              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+            </div>
+          </form>
+        </div>
+        <!-- Forgot Password Modal -->
+        <div class="modal" *ngIf="showForgotPasswordModal">
+          <div class="modal-content">
+            <span class="close" (click)="closeForgotPasswordModal()">&times;</span>
+            <form (submit)="sendPasswordResetEmail($event)">
+              <p for="forgot-email">Enter your email to reset your password</p>
+              <div class="input-box">
+                <input type="email" id="forgot-email" [(ngModel)]="forgotEmail" name="forgotEmail" required ngModel
+                  #e="ngModel" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}">
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="signup-form">
+          <div class="title">Signup</div>
+          <form action="#" [formGroup]="signup" (ngSubmit)="signupdata(signup)">
+            <div class="input-boxes">
+              <div class="input-box">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="text" placeholder="Enter your name" formControlName="name" required>
+                <small *ngIf="signup.get('name')?.invalid && signup.get('name')?.touched" class="text-danger"> Name is
+                  Required</small>
+              </div>
+              <div class="input-box">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="text" placeholder="Enter your email" formControlName="email" required>
+                <small *ngIf="signup.get('email')?.invalid && signup.get('email')?.touched" class="text-danger"> Email
+                  is Required</small>
+              </div>
+              <div class="input-box">
+                <label for="exampleInputPassword1" class="form-label"></label>
+                <input type="password" formControlName="password" placeholder="Enter your password" required>
+                <small *ngIf="signup.get('password')?.invalid && signup.get('password')?.touched" class="text-danger">
+                  Password is Required</small>
+              </div>
+              <div class="button input-box">
+
+                <input type="submit" value="Sing Up">
+              </div>
+              <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-spinner *ngIf="showSpinner"></app-spinner>
+</body>
+
+
+<app-footer></app-footer>

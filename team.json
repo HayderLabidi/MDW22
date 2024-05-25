@@ -1,0 +1,42 @@
+{
+  "team": [
+    {
+      "nom": "Hayder Labidi",
+      "job": "CEO",
+      "discreption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti nobis pariatur corporis veritatis quo? Recusandae inventore libero distinctio deleniti expedita, eum unde nobis cumque, mollitia accusamus maxime odio consequatur!",
+      "id": "5b51"
+    },
+    {
+      "nom": "Jennifer Luther",
+      "job": "e-commerce",
+      "discreption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti nobis pariatur corporis veritatis quo? Recusandae inventore libero distinctio deleniti expedita, eum unde nobis cumque, mollitia accusamus maxime odio consequatur!",
+      "id": "2e35"
+    },
+    {
+      "nom": "Dan Daiel",
+      "job": "Desginer",
+      "discreption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti nobis pariatur corporis veritatis quo? Recusandae inventore libero distinctio deleniti expedita, eum unde nobis cumque, mollitia accusamus maxime odio consequatur!",
+      "id": "2996"
+    },
+    {
+      "nom": "Jack Waterson",
+      "job": "Editor",
+      "discreption": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deleniti nobis pariatur corporis veritatis quo? Recusandae inventore libero distinctio deleniti expedita, eum unde nobis cumque, mollitia accusamus maxime odio consequatur!",
+      "id": "423a"
+    }
+  ],
+  "signup": [
+    {
+      "id": "4392",
+      "name": "hama",
+      "email": "hama@gmail.com",
+      "password": "9999"
+    },
+    {
+      "id": "6aff",
+      "name": "hayder",
+      "email": "hayder@gmail.com",
+      "password": "0000"
+    }
+  ]
+}

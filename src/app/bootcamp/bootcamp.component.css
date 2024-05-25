@@ -1,0 +1,421 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section styles */
+section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title small {
+    display: block;
+    font-size: 16px;
+    color: #888;
+}
+
+/* Home Section */
+#home {
+    color: white;
+}
+
+.home-slider .item {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-slider .caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.home-slider h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-slider h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.home-slider .section-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home-slider .section-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Feature Section */
+#feature .feature-thumb {
+    text-align: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#feature .feature-thumb span {
+    font-size: 32px;
+    color: #f39c12;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#feature .feature-thumb h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#feature .feature-thumb p {
+    color: #777;
+}
+
+#feature .feature-thumb:hover {
+    transform: translateY(-10px);
+}
+
+/* About Section */
+#about {
+    background: #fff;
+}
+
+#about .about-info {
+    text-align: left;
+}
+
+#about .about-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about figure {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#about figure span {
+    font-size: 32px;
+    color: #f39c12;
+    margin-right: 20px;
+}
+
+#about figcaption h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#about figcaption p {
+    color: #777;
+}
+
+/* Team Section */
+#team .team-thumb {
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+#team .team-image img {
+    border-radius: 50%;
+
+}
+
+#team .team-info h3 {
+    font-size: 20px;
+
+}
+
+#team .social-icon {
+    list-style: none;
+    padding: 0;
+}
+
+#team .social-icon li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#team .social-icon li a {
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#team .social-icon li a:hover {
+    color: #f39c12;
+}
+
+#team .team-thumb:hover {
+    transform: translateY(-10px);
+}
+
+/* Courses Section */
+#courses .courses-thumb {
+    background: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    width: 500px;
+}
+
+#courses .courses-thumb .courses-top {
+    position: relative;
+    margin-left: 50px;
+}
+
+#courses .courses-thumb .courses-image img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+
+#courses .courses-detail h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#courses .courses-detail p {
+    color: #777;
+}
+
+#courses .courses-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#courses .courses-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#courses .courses-price {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+#courses .courses-price.free {
+    background-color: #2ecc71;
+}
+
+#courses .courses-thumb:hover {
+    transform: translateY(-10px);
+}
+
+/* Testimonial Section */
+#testimonial {
+    background: #000000;
+    color: rgb(98, 98, 98);
+}
+
+#testimonial .tst-image img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#testimonial .tst-author h4 {
+    margin-bottom: 5px;
+}
+
+#testimonial .tst-author span {
+    display: block;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+#testimonial .tst-rating i {
+    color: #f39c12;
+    margin-right: 2px;
+}
+/* Basic styles for the slider container and slides */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(90% * 5 / 3); /* Adjust based on the number of slides (5 items for demonstration, showing 3) */
+}
+
+.slide {
+    flex: 1 0 calc(100% / 3); /* Display 3 slides at a time */
+    box-sizing: border-box;
+    padding: 0 10px; /* Add some space between slides if needed */
+}
+
+/* Style the navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Additional styles for course items */
+.courses-thumb {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.courses-top {
+    text-align: center;
+}
+
+.courses-detail {
+    margin-top: 10px;
+}
+
+.courses-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.courses-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.courses-price span {
+    font-weight: bold;
+}
+
+
+/* */
+.container1 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.stars {
+    font-size: 30px;
+    margin: 10px 0;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.star {
+    cursor: pointer;
+    margin: 0 5px;
+
+}
+.yellow {
+    color: yellow;
+}
+
+
+.one {
+    color: rgb(255, 0, 0);
+}
+
+.two {
+    color: rgb(255, 106, 0);
+}
+
+.three {
+    color: rgb(251, 255, 120);
+}
+
+.four {
+    color: rgb(255, 255, 0);
+}
+
+.five {
+    color: rgb(24, 159, 14);
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reviews {
+    margin-top: 20px;
+    text-align: left;
+}
+.review-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(204, 204, 0);
+  }
+  
+
+.review {
+    background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.review p {
+    margin: 0;
+}
+

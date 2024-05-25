@@ -1,0 +1,138 @@
+<header class="header" data-header>
+  <div class="container">
+    <a routerLink="/p" class="logo">
+      <img src="assets/images/logo.png" width="141" height="28" alt="Jassa home">
+    </a>
+
+    <nav class="navbar" data-navbar >
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+          <a routerLink="/home" class="label-lg navbar-link has-after">Home</a>
+        </li>
+
+        <li class="navbar-item">
+          <a routerLink="/service"  class="label-lg navbar-link has-after">Services</a>
+        </li>
+
+        <li class="navbar-item">
+          <a routerLink="/portfolio"  class="label-lg navbar-link has-after">Portfolio</a>
+        </li>
+
+        <li class="navbar-item">
+          <a routerLink="/bootcamp"  class="label-lg navbar-link has-after">Bootcamp</a>
+        </li>
+
+        <li class="navbar-item">
+          <a routerLink="/contact"  class="label-lg navbar-link has-after">Contact</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <a routerLink="/login" class="btn btn-primary">Log out</a>
+
+    <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler >
+      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+  </div>
+</header>
+<main>
+    <article>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact has-bg-image" aria-labelledby="contact-label"
+        style="background-image: url('./assets/images/contact-bg.png')">
+        <div class="container">
+
+          <form class="contact-form" (submit)="sendEmail($event)">
+            <h2 class="headline-sm" id="contact-label">CONTACT US</h2>
+          
+            <div class="wrapper">
+              <div>
+                <label for="name" class="label">Your name</label>
+                <input type="text" name="name" id="name" name="user_user" placeholder="Name *" required class="input-field" ngModel #l="ngModel">
+              </div><br>
+              <div class="alert" *ngIf="l.invalid && l.touched" style="color: rgb(215, 58, 58);">
+                First name is a required field
+              </div><br><br>
+              <div>
+                <label for="email" class="label">Your Email</label>
+                <input type="email" name="email" id="email" name="user_email" placeholder="Email *" required class="input-field" ngModel #e="ngModel"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}">
+              </div><br>
+              <div class="alert" *ngIf="e.invalid && e.touched">
+                <div *ngIf="e.errors?.['required']" style="color: rgb(215, 58, 58);">The email is a required field</div>
+                <div *ngIf="e.errors?.['pattern']" style="color: rgb(215, 58, 58);">The email doesn't seem right</div>
+              </div>
+            </div><br>
+          
+            <label for="message" class="label">Your message</label>
+            <textarea name="message" id="message" placeholder="Your message *" required class="input-field"></textarea><br>
+            
+            <button type="submit" class="btn btn-tertiary">Send Message</button>
+          </form>
+          
+
+          <div class="contact-content">
+
+            <ul class="contact-list">
+
+              <li class="contact-item">
+
+                <div class="item-icon" style="background-color: hsl(177, 39%, 72%)">
+                  <ion-icon name="call" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <p class="label-lg">Phone</p>
+
+                  <a href="tel:+011236548096" class="body-lg">+216 29019040</a>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon" style="background-color: hsl(41, 99%, 64%)">
+                  <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <p class="label-lg">Mail</p>
+
+                  <a href="tel:info@domainname.com" class="body-lg">hayderlabidi2001@gmail.com</a>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon" style="background-color: hsl(19, 97%, 85%)">
+                  <ion-icon name="location" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div>
+                  <p class="label-lg">Visit our startup</p>
+
+                  <address class="body-lg">
+                    Tunisia,
+                    sidi bouzid
+                  </address>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
