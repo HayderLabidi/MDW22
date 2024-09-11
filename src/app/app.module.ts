@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { RouterModule } from '@angular/router';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { HamedComponent } from './hamed/hamed.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     LoginComponent,
     BootcampComponent,
     SpinnerComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    HamedComponent
 
   ], 
   imports: [
