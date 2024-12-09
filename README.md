@@ -1,6 +1,6 @@
 <p align="center"><a href="https://androidstudio.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="400"></a></p>
 
-# Chat App
+# Porfolio Web
 
 ## Quick Start 
 clone the repo
